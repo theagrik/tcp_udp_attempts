@@ -38,7 +38,7 @@ begin
       Suffix := '';
       Readln(Message);
       try
-        //EasyUDP.Send(EasyTCP.StrToByte(Message));
+        EasyUDP.Send(EasyTCP.StrToByte(Message));
       except
       on ex: Exception do
         Suffix := ex.Message;
